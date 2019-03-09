@@ -5,6 +5,9 @@ repositories {
 }
 
 dependencies {
+	compileOnly 'org.slf4j:slf4j-api:1.7.26'
+	compileOnly 'org.apache.httpcomponents:httpcore:4.4.11'
+	compileOnly 'org.apache.httpcomponents:httpclient:4.5.7'
 	testImplementation 'org.hamcrest:hamcrest:2.1'
         testImplementation 'org.hamcrest:hamcrest-library:2.1'
         testImplementation 'junit:junit:4.12'

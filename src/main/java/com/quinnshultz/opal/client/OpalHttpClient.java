@@ -15,6 +15,8 @@ import org.apache.http.protocol.HttpContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.quinnshultz.opal.client.validator.HttpResponseValidator;
+
 /**
  * @author Cosmin Stejerean, Karl Heinz Marbaise, Quinn Shultz
  */
@@ -25,6 +27,7 @@ public class OpalHttpClient implements OpalHttpConnection {
 	private URI uri;
 	private CloseableHttpClient client;
 	private HttpContext localContext;
+	private HttpResponseValidator httpResponseValidator;
 
 	@Override
 	public void close() {
